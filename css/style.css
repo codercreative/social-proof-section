@@ -1,0 +1,119 @@
+/* ------GENERAL------- */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* NEUTRAL*/
+  --dark-greyish-magenta: hsl(303, 10%, 53%);
+  --light-greyish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+img {
+  border-radius: 50%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.title {
+  color: var(--very-dark-magenta);
+  width: 82%;
+  margin-top: 2em;
+  font-size: 2.5rem;
+}
+
+.intro {
+  color: var(--dark-greyish-magenta);
+  line-height: 1.5;
+}
+
+.stars {
+  background-color: var(--light-greyish-magenta);
+  padding: 1em 0;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  width: 100%;
+  border-radius: 8px;
+}
+
+.icon {
+  height: 1.2em;
+  width: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-magenta);
+  border-radius: 8px;
+  padding: 1.7em;
+}
+
+.buyer {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+}
+
+img {
+  width: 3em;
+  height: 3em;
+}
+
+.name {
+  padding-left: 1em;
+  color: var(--white);
+}
+
+.name h2 {
+  font-size: 1rem;
+}
+
+.name p {
+  color: var(--soft-pink);
+  padding-top: 0.5em;
+  font-size: 0.8rem;
+}
+
+blockquote {
+  color: var(--white);
+  text-align: left;
+  line-height: 1.6;
+  padding-top: 0.5em;
+}
+
+/* HELPER CLASSES  */
+
+.sm-gap {
+  margin-bottom: 1em;
+}
+
+.lg-gap {
+  margin-bottom: 1.5em;
+}
