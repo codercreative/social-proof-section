@@ -22,6 +22,7 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -35,38 +36,30 @@
   </head>
   <body>
     <main class="container">
-      <h1 class="title">10,000+ of our users love our products.</h1>
-      <p class="intro">
-        We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.
-      </p>
+      <div class="top-split">
+        <div class="intro">
+          <h1 class="title">10,000+ of our users love our products.</h1>
+          <p class="text">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </div>
 
-      <article class="stars">
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <p>Rated 5 Stars in Reviews</p>
-      </article>
-      <article class="stars">
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <p>Rated 5 Stars in Report Guru</p>
-      </article>
-      <article class="stars">
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <img class="icon" src="./images/icon-star.svg" alt="star icon" />
-        <p>Rated 5 Stars in BestTech</p>
-      </article>
+        <ul class="star-wrapper">
+          <li class="stars">
+            <p>Rated 5 Stars in Reviews</p>
+          </li>
+          <li class="stars">
+            <p>Rated 5 Stars in Report Guru</p>
+          </li>
+          <li class="stars">
+            <p>Rated 5 Stars in BestTech</p>
+          </li>
+        </ul>
+      </div>
 
-      <section class="section-cards">
+      <section class="quotes bottom-split">
         <article class="card lg-gap">
           <div class="buyer sm-gap">
             <img src="./images/image-colton.jpg" alt="Colton Smith" />

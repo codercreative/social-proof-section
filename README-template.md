@@ -10,10 +10,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Code issues along the way](#code-issues-along-the-way)
-  - [Code snippets](#code-snippets)
-  - [CSS tips](#css-tips)
-  - [Interesting articles](#interesting-articles)
+  - [Code issues and code snippets](#code-issues-and-code-snippets)
 - [Author](#author)
 
 ## Overview
@@ -26,13 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution.
+![](./images/social-proof-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution URL](https://github.com/codercreative/social-proof-section)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -45,29 +40,85 @@ Add a screenshot of your solution.
 - CSS Grid
 - Mobile-first workflow
 
-### Code issues along the way
+### Code issues and code snippets
 
-bla bla bla bla bla bla bla bla
+I coded most of this project myself, but I was very happy to learn some new tricks via [Kevin Powell's youtube recording](https://youtu.be/K27WULzr2P8) of how he solved this frontendmentor challenge.
 
-### Code snippets
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+In the mobile version, the star rating icons posed a challenge, but Kevin had a cool solution. With below code, I only had to insert the star icon once --- instead of 15 times.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.stars p::before {
+  content: "";
+  width: 6rem;
+  height: 1rem;
+  margin: 0 auto;
+  display: block;
+  background-image: url("/images/icon-star.svg");
+  margin-bottom: 0.5rem;
+  background-repeat: space;
+  margin-bottom: 0.8em;
 }
 ```
 
-### CSS tips
+Whew, I had a hard time figuring out why I could not place the stars and the rating text next to each other and center align them. Kevin Powell came to the rescue with this line of code:
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+```css
+.stars p::before {
+  margin: -0.2rem 0.5rem 0 0;
+}
+```
 
-## Interesting articles
+Below, Kevin Powell's cool solution for shifting the alignment of the star rating elements as well as the quote elements:
 
-- Website - [Add your name here](https://www.your-site.com)
+One option for star ratings:
+
+```css
+.stars:first-of-type {
+  margin-left: 0;
+}
+
+.stars:last-of-type {
+  margin-right: 0;
+}
+```
+
+...However, I chose this option for star ratings:
+
+```css
+.stars:first-of-type {
+  transform: translateX(-2em);
+  margin-top: 2em;
+}
+
+.stars:last-of-type {
+  transform: translateX(2em);
+  margin-bottom: 2em;
+}
+```
+
+Simple and elegant solution to shift the alignment of the quote elements --- once you know how 😁:
+
+```css
+.card:nth-child(2) {
+  transform: translateY(3em);
+}
+
+.card:nth-child(3) {
+  transform: translateY(6em);
+}
+```
+
+And another thing Kevin made me realize --- you can have two background images at the same time:
+
+```css
+body {
+  background-image: url("/images/bg-pattern-top-desktop.svg"),
+    url("/images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 40%, 25%;
+}
+```
 
 ## Author
 
