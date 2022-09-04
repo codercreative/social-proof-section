@@ -108,18 +108,6 @@ Simple and elegant solution to shift the alignment of the quote elements --- onc
 }
 ```
 
-And another thing Kevin made me realize --- you can have two background images at the same time:
-
-```css
-body {
-  background-image: url("/images/bg-pattern-top-desktop.svg"),
-    url("/images/bg-pattern-bottom-desktop.svg");
-  background-position: top left, bottom right;
-  background-repeat: no-repeat;
-  background-size: 40%, 25%;
-}
-```
-
 ## Author
 
 - Frontend Mentor - [@codercreative](https://www.frontendmentor.io/profile/codercreative)

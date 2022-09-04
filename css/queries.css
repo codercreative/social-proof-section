@@ -45,7 +45,7 @@
   }
 
   .stars p::before {
-    margin: -0.2rem 0.5rem 0 0;
+    margin: -0.2rem 0.5rem 0;
   }
 
   .stars:first-of-type {
@@ -64,5 +64,9 @@
 
   .card:nth-child(3) {
     transform: translateY(6em);
+  }
+
+  .attribution {
+    margin: 9em 0 5em 0;
   }
 }
