@@ -53,7 +53,7 @@ In the mobile version, the star rating icons posed a challenge, but Kevin had a 
   height: 1rem;
   margin: 0 auto;
   display: block;
-  background-image: url("/images/icon-star.svg");
+  background-image: url("../images/icon-star.svg");
   margin-bottom: 0.5rem;
   background-repeat: space;
   margin-bottom: 0.8em;

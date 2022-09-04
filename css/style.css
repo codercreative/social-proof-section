@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   margin-top: 5vh;
   width: 90%;
-  background-image: url("/images/bg-pattern-top-desktop.svg");
+  background-image: url("../images/bg-pattern-top-desktop.svg");
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   background-size: 40%, 25%;
