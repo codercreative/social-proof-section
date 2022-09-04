@@ -48,14 +48,6 @@
     margin: -0.2rem 0.5rem 0 0;
   }
 
-  /* .stars:first-of-type {
-    margin-left: 0;
-  }
-
-  .stars:last-of-type {
-    margin-right: 0;
-  } */
-
   .stars:first-of-type {
     transform: translateX(-2em);
     margin-top: 2em;
