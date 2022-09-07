@@ -108,7 +108,7 @@ Simple and elegant solution to shift the alignment of the quote elements --- onc
 }
 ```
 
-One thing I have to be sure to ensure in future is if all images show on the live version of the project. I was thrown for a loop with Visual Studio Code as the images showed locally, but not when I uploaded the project to Github. It turned out I had to add ../ to my url. (Thanks to @hyrongennike at Frontendmentor.io for pointing this out)
+One thing I have to ensure in future is that all images show on the live version of the project. I was thrown for a loop with Visual Studio Code as the images showed locally, but not when I uploaded the project to Github. It turned out I had to add ../ to my url. (Thanks to @hyrongennike at Frontendmentor.io for pointing this out)
 
 ```css
 body {
