@@ -30,10 +30,13 @@ body {
   margin: 0 auto;
   margin-top: 5vh;
   width: 90%;
-  background-image: url("../images/bg-pattern-top-desktop.svg");
-  background-position: top left, bottom right;
-  background-repeat: no-repeat;
-  background-size: 40%, 25%;
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-position: left -200px top -80px, right -100px bottom -100px;
+  background-repeat: no-repeat, no-repeat;
+  /* background-attachment: fixed, fixed; */
+  background-size: contain, contain;
+  background-size: 60%, 40%;
 }
 
 .container,

@@ -10,7 +10,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Code issues and code snippets](#code-issues-and-code-snippets)
+  - [Code snippets and acknowledgments](#code-snippets-and-acknowledgments)
 - [Author](#author)
 
 ## Overview
@@ -40,7 +40,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### Code issues and code snippets
+### Code snippets and acknowledgments
 
 I coded most of this project myself, but I was very happy to learn some new tricks via [Kevin Powell's youtube recording](https://youtu.be/K27WULzr2P8) of how he solved this frontendmentor challenge.
 
@@ -105,6 +105,25 @@ Simple and elegant solution to shift the alignment of the quote elements --- onc
 
 .card:nth-child(3) {
   transform: translateY(6em);
+}
+```
+
+One thing I have to be sure to ensure in future is if all images show on the live version of the project. I was thrown for a loop with Visual Studio Code as the images showed locally, but not when I uploaded the project to Github. It turned out I had to add ../ to my url. (Thanks to @hyrongennike at Frontendmentor.io for pointing this out)
+
+```css
+body {
+  background-image: url("../images/icon-star.svg");
+}
+```
+
+I added the two wave svg images to the background thanks to great help from @correlucas at Frontendmentor.io.
+
+```css
+body {
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-position: left -200px top -80px, right -100px bottom -100px;
+  background-repeat: no-repeat, no-repeat;
 }
 ```
 
